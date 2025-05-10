@@ -1,0 +1,152 @@
+body {
+    background: linear-gradient(135deg, #1a1a1a, #3d3d3d);
+    color: #e0e0e0;
+    font-family: 'Cinzel', serif;
+    height: 96vh;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    z-index: 1;
+}
+
+
+.div_vidas{
+    color: #d4af37; 
+    text-shadow: 2px 2px 4px #000; 
+    font-size: 30px;
+    position: absolute; 
+    top: -10px;
+    left: 20px;
+    z-index: 0;
+}
+
+
+.result {
+    text-align: center;
+    font-size: 100px;
+    z-index: 0;
+}
+
+
+.div_input{
+    text-shadow: 2px 2px 4px #000; 
+    font-size: 20px;
+    align-items: center; 
+}
+.input{
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #555;
+    padding: 10px;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    width: 210px;
+    position: absolute;
+    left: 40.3%;
+    top: 50%;
+}
+.input:focus {
+    outline: none;
+}
+
+
+h2 {
+    color: #d4af37; 
+    text-shadow: 2px 2px 4px #000; 
+}
+
+
+.div_btn-menu{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+
+.buttons{
+    position: absolute;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    top: 63%;
+    left: 41.2%;
+}
+
+
+.menu{
+    color: rgba(255, 219, 99, 0.699);
+}
+.menu-page{
+    background-color: #202020;
+    border: 1px solid #555;
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+    left: -100%;
+}
+.title{
+    text-align: center;
+}
+.sub-title{
+    position: absolute;
+    left: 20px;
+    top: 100px;
+    font-size: 20px; 
+}
+
+
+@keyframes pull-menu{
+    0% {
+        left: -100%; 
+    }
+    100% {
+        left: 0;
+    }
+}
+@keyframes push-menu{
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -100%; 
+    }
+}
+.pull-menu{
+    animation: pull-menu 0.7s forwards;
+}
+.push-menu{
+    animation: push-menu 0.5s forwards;
+}
+
+
+button {
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #555;
+    padding: 10px 20px;
+    font-family: 'Cinzel', serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #58584d;
+}
+
+
+.game-over {
+    z-index: 3;
+    position: absolute;
+    left: -1%;
+    top: -1%;
+    height: 103.99%;
+    width: 101.6%;
+    background-color: rgba(36, 24, 0, 0.57); 
+}
+.game-over-position {
+    text-align: center;
+    margin-top: 23%;
+    font-size: 30px;
+}

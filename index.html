@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mini Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" 
+    rel="stylesheet">
+
+</head>
+<body>
+    <div class="game-over">
+        <div class="game-over-position">
+            <h1 class="hg">Game Over</h1>
+            <p class="pg">Press "Try Again" to restart</p>
+            <button onclick="try_again()" class="Try Again">Try Again</button>
+        </div>
+    </div>
+
+    <div class="div_vidas">
+        <h2 class="vidas">10</h2>
+    </div>
+
+    <div class="div_btn-menu">
+        <button onclick="menu()" class="menu">Menu</button>
+    </div>
+    
+    <div class="menu-page">
+        <h1 class="title">Mini Game</h1>
+        <p class="sub-title">Tente advinhar qual é o numero escolhido dentre 0 e 100!
+            <br>
+            <br>
+        Digite um número e verifique se acertou no botão 'Verificar'
+            <br>
+            <br>
+        Você tem 10 tentativas,
+            <br>
+         boa sorte!</p>
+    </div>
+
+    <div class="div_result">
+        <h2 class="result res"></h2>
+    </div>
+    
+    <div class="div_input">
+        <input type="number" class="input" placeholder="Digite um número">
+    </div>
+
+    <div class="buttons">
+        <button onclick="verific()" class="verificaçao">verificar</button>
+        <button onclick="retry()" class="reiniciar">Reiniciar</button>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
